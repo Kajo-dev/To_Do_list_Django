@@ -20,6 +20,6 @@ from Menago import views as Mengo_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Mengo_views.Home_page,name='Homepage'),
+    path('', Mengo_views.home_page,name='Homepage'),
 
 ]
