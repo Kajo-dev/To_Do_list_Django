@@ -9,4 +9,5 @@ class TaskiWyswietlanie(forms.ModelForm):
             'nazwa',
             'godzina_rozpoczencia',
             'czas_przeznaczony',
+            'kategorie',
         ]

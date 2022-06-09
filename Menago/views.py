@@ -17,7 +17,11 @@ def home_page(request, *args, **kwargs):
     
     #wyswietlanie danych
 
+    objekt=Taski.objects.all()
+
     zwracacz={
-        'obiekty':zapytanie
+        'dodanie':zapytanie,
+        'obj':objekt,
+
     }
     return render(request,'index.html',zwracacz)
