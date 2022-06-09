@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS=["/Users/kajetan/Documents/To_Do_list_Django/static"]
+
 
 # Application definition
 
@@ -58,7 +60,7 @@ ROOT_URLCONF = 'to_do_list.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/'front'],
+        'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
