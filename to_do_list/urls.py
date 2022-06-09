@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Menago import views as Mengo_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', Mengo_views.Home_page,name='Homepage'),
+
 ]
