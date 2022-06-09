@@ -11,3 +11,4 @@ class TaskiWyswietlanie(forms.ModelForm):
             'czas_przeznaczony',
             'kategorie',
         ]
+

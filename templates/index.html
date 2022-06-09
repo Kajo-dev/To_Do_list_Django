@@ -53,9 +53,10 @@
                     <td>{{item.godzina_rozpoczencia}}</td>
                     <td>{{item.czas_przeznaczony}}</td>
                     <td>{{item.kategorie}}</td>
-                    <td><i class="bi bi-trash"></i></td>
+                    <td><a href="{%url 'Usuwanie' item.id%}" class="btn btn-outline-danger">Usuń</a></td>
                 </tr>
             {%endfor%}
+            
             </tbody>
           </table>
     </div>

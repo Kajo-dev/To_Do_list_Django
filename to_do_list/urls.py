@@ -22,5 +22,6 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Mengo_views.home_page,name='Homepage'),
+    path('usuwanie_taska/<objekt_id>',Mengo_views.usuwanie_taska,name='Usuwanie')
 
 ]

@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from operator import index
+from django.shortcuts import redirect, render
 from .forms import TaskiWyswietlanie
 from .models import Taski
 from django.urls import is_valid_path
@@ -24,4 +25,11 @@ def home_page(request, *args, **kwargs):
         'obj':objekt,
 
     }
+
     return render(request,'index.html',zwracacz)
+
+def usuwanie_taska(request,objekt_id):
+    print(type(objekt_id))
+    dusu=Taski.objects.get(pk=objekt_id)
+    dusu.delete()
+    return redirect('/')
