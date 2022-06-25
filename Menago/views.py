@@ -21,8 +21,6 @@ def home_page(request, *args, **kwargs):
     objekt=Taski.objects.all()
 
     zwracacz={
-        'dodanie':zapytanie,
-        'obj':objekt,
 
     }
 
